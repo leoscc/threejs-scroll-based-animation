@@ -12,6 +12,10 @@ const parameters = {
 
 gui
     .addColor(parameters, 'materialColor')
+    .onChange(() => 
+    {
+        toonMaterial.color.set(parameters.materialColor)
+    })
 
 /**
  * Base

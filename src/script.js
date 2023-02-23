@@ -29,8 +29,15 @@ const scene = new THREE.Scene()
 /**
  * Objects
  */
+// Textures
+const textureLoader = new THREE.TextureLoader()
+const gradientTexture = textureLoader.load('/textures/gradients/3.jpg')
+
 // Material
-const toonMaterial = new THREE.MeshToonMaterial({ color: parameters.materialColor })
+const toonMaterial = new THREE.MeshToonMaterial({ 
+    color: parameters.materialColor, 
+    gradientMap: gradientTexture 
+})
 
 // Meshes
 const mesh1 = new THREE.Mesh(

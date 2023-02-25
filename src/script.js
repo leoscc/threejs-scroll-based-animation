@@ -134,7 +134,7 @@ const tick = () =>
     const elapsedTime = clock.getElapsedTime()
 
     // Animate camera
-    camera.position.y = - scrollY / sizes.height
+    camera.position.y = - scrollY / sizes.height * objectsDistance
     
     // Animate meshes
     for(const mesh of sectionMeshes) {

@@ -62,6 +62,10 @@ mesh1.position.y = - objectsDistance * 0
 mesh2.position.y = - objectsDistance * 1
 mesh3.position.y = - objectsDistance * 2
 
+mesh1.position.x = 2
+mesh2.position.x = -2
+mesh3.position.x = 2
+
 const sectionMeshes = [mesh1, mesh2, mesh3]
 
 scene.add(mesh1, mesh2, mesh3)
@@ -121,7 +125,6 @@ let scrollY = window.scrollY // get current scroll value
 
 document.addEventListener('scroll', () => {
     scrollY = window.scrollY
-    console.log(scrollY)
 })
 
 /**

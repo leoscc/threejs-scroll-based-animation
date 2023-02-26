@@ -127,6 +127,10 @@ document.addEventListener('scroll', () => {
     scrollY = window.scrollY
 })
 
+const cursor = {}
+cursor.x = 0
+cursor.y = 0
+
 /**
  * Animate
  */

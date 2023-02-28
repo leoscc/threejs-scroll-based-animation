@@ -103,10 +103,14 @@ window.addEventListener('resize', () =>
 /**
  * Camera
  */
+// Group camera
+const cameraGroup = new THREE.Group()
+scene.add(cameraGroup)
+
 // Base camera
 const camera = new THREE.PerspectiveCamera(35, sizes.width / sizes.height, 0.1, 100)
 camera.position.z = 6
-scene.add(camera)
+cameraGroup.add(camera)
 
 /**
  * Renderer
@@ -151,8 +155,8 @@ const tick = () =>
     const parallaxX = cursor.x 
     const parallaxY = - cursor.y
 
-    camera.position.x = parallaxX
-    camera.position.y = parallaxY
+    cameraGroup.position.x = parallaxX
+    cameraGroup.position.y = parallaxY
 
     
     // Animate meshes

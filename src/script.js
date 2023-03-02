@@ -93,6 +93,10 @@ const particlesMaterial = new THREE.PointsMaterial({
     size: 0.03
 })
 
+// Particles - Points
+const particles = new THREE.Points(particlesGeometry, particlesMaterial)
+scene.add(particles) 
+
 // create a mesh like but instead of a material use points
 
 

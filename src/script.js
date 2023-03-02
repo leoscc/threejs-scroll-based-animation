@@ -71,6 +71,16 @@ const sectionMeshes = [mesh1, mesh2, mesh3]
 scene.add(mesh1, mesh2, mesh3)
 
 /**
+ * Geometries
+ */
+// Geometry
+const particlesCount = 200
+
+
+// create a mesh like but instead of a material use points
+
+
+/**
  * Lights
  */
 const directionalLight = new THREE.DirectionalLight('#FFFFFF', 1)

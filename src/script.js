@@ -87,6 +87,12 @@ for (let i = 0; i < particlesCount; i++)
 const particlesGeometry = new THREE.BufferGeometry()
 particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3)) // 3 = x,y,z
 
+const particlesMaterial = new THREE.PointsMaterial({
+    color: parameters.materialColor,
+    sizeAttenuation: true,
+    size: 0.03
+})
+
 // create a mesh like but instead of a material use points
 
 

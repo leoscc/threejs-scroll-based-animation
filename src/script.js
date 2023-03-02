@@ -77,6 +77,13 @@ scene.add(mesh1, mesh2, mesh3)
 const particlesCount = 200
 const positions = new Float32Array(particlesCount * 3) // * 3 -> x,y,z
 
+for (let i = 0; i < particlesCount; i++) 
+{
+    positions[i * 3 + 0] = Math.random() // x
+    positions[i * 3 + 1] = Math.random() // y
+    positions[i * 3 + 2] = Math.random() // z
+}
+
 // create a mesh like but instead of a material use points
 
 

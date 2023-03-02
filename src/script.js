@@ -79,9 +79,9 @@ const positions = new Float32Array(particlesCount * 3) // * 3 -> x,y,z
 
 for (let i = 0; i < particlesCount; i++) 
 {
-    positions[i * 3 + 0] = (Math.random() - 0.5) // x
+    positions[i * 3 + 0] = (Math.random() - 0.5) * 10 // x
     positions[i * 3 + 1] = Math.random() // y
-    positions[i * 3 + 2] = (Math.random() - 0.5) // z
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 10 // z
 }
 
 const particlesGeometry = new THREE.BufferGeometry()

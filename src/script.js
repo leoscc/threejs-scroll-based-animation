@@ -75,7 +75,7 @@ scene.add(mesh1, mesh2, mesh3)
  */
 // Geometry
 const particlesCount = 200
-
+const positions = new Float32Array(particlesCount * 3) // * 3 -> x,y,z
 
 // create a mesh like but instead of a material use points
 

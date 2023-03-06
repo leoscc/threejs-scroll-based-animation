@@ -15,6 +15,7 @@ gui
     .onChange(() => 
     {
         toonMaterial.color.set(parameters.materialColor)
+        particlesMaterial.color.set(parameters.materialColor)
     })
 
 /**

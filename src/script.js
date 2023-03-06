@@ -162,7 +162,11 @@ let currentSection = 0
 document.addEventListener('scroll', () => {
     scrollY = window.scrollY
 
-    const newSection = scrollY / sizes.height // get 0 for section 1, 1 for section 2...
+    const newSection = Math.round(scrollY / sizes.height) // get 0 for section 1, 1 for section 2...
+
+    if(newSection !== currentSection) {
+        currentSection = newSection
+    }
 })
 
 const cursor = {}

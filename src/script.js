@@ -157,6 +157,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  * Scroll
  */
 let scrollY = window.scrollY // get current scroll value
+let currentSection = 0
 
 document.addEventListener('scroll', () => {
     scrollY = window.scrollY

@@ -166,6 +166,8 @@ document.addEventListener('scroll', () => {
 
     if(newSection !== currentSection) {
         currentSection = newSection
+
+        console.log(sectionMeshes[currentSection])
     }
 })
 

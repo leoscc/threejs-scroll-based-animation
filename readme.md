@@ -1,4 +1,9 @@
-# Three.js Journey
+# Three.js Journey - Scroll Based Animations + Parallax particles
+
+
+![ezgif com-video-to-gif (1)](https://github.com/leoscc/threejs-scroll-based-animation/assets/62032328/10b4358f-f377-4498-b349-f8d119947ae1)
+
+
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
